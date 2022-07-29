@@ -1,0 +1,23 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}Create News{% endblock %}
+
+{% block content %}
+    <div class="block-form">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="{{ news.title }}" class="inp1">
+            <input type="text" name="anons" placeholder="{{ news.anons }}" class="inp2">
+            <input type="text" name="full_text" placeholder="{{ news.full_text }}" class="inp2">
+            <input type="datetime" name="date" placeholder="Дата оновленої ПУблікації" class="inp2">
+            <p>
+                <label for="id_user" >User</label>
+                <select name="user" required id="id_user">
+                    <option value="{{ user.id }}">{{ user.username }}</option>
+                </select>
+            </p>
+            <input type="file" name="image_post">
+            <button class="btn-create" type="submit">Update</button>
+        </form>
+    </div>
+{% endblock %}

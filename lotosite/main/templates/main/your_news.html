@@ -1,0 +1,27 @@
+{% extends 'main/layout.html'%}
+
+<link rel="stylesheet" href="/static/main/css/home.css">
+
+{% block title %}Your News{% endblock %}
+{% block content %}
+<div class="h1">
+<h1>All your News</h1>
+</div>
+<div class="all_news">
+    {% for news in user_news %}
+    <h1>{{ news.title }}</h1>
+    <h3>{{ news.anons }}</h3>
+    <p>{{ news.full_text }}</p>
+    <p>{{ news.date }}</p>
+    {% if news.image_post %}
+    <img src="/media/{{ news.image_post }}" alt="img">
+    {% endif %}
+    <div class="btn-update">
+        <a href="{% url 'news-update' news.pk %}">Update</a>
+    </div>
+    <div class="btn-delete">
+        <a  href="{% url 'delete_news' news_id=news.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

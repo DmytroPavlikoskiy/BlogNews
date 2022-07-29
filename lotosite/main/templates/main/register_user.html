@@ -1,0 +1,20 @@
+{% extends 'main/layout.html'%}
+
+
+{% block content %}
+<div class="h">
+    <h3>Register</h3>
+</div>
+
+<div class="block-form">
+    <form method="post">
+        {% csrf_token %}
+        <input class="inp1" type="text" name="username" placeholder="Ваше ім'я">
+        <input class="inp2" type="password" name="password1" placeholder="Пароль">
+        <input class="inp3" type="password" name="password2" placeholder="Повторіть пароль">
+        <input class="inp4" type="email" name="email" placeholder="Електронна Пошта">
+        <button class="btn-create-reg">Зареєструватись</button>
+    </form>
+
+</div>
+{% endblock %}

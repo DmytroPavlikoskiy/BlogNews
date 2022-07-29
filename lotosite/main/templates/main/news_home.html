@@ -1,0 +1,17 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}News{% endblock %}
+
+{% block content %}
+      {% for el in news %}
+          <div class="all_news">
+              <h1> {{ el.title }}</h1>
+              <h3> {{ el.anons }} </h3>
+              <p> {{ el.full_text }} </p>
+              <p> {{ el.date }} </p>
+              {% if el.image_post %}
+                  <img src="/media/{{ el.image_post }}" alt="img">
+              {% endif %}
+          </div>
+      {% endfor %}
+{% endblock %}

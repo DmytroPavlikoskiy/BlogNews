@@ -1,0 +1,479 @@
+/*layout.html header logo and logo image style*/
+
+body {
+    background: linear-gradient(to right, #333333, #dd1818);
+    margin: 0;
+    padding: 0px;
+}
+
+.block {
+    background-color: rgba(0, 0, 0, 0.57);
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 10hv;
+    margin: 0px;
+    padding: 26px;
+    max-width: 100%;
+}
+
+.btn-body1 {
+    background: linear-gradient(to right, #8E0E00, #1F1C18);
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 50px;
+    background-size: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.43);
+    transition: .5s;
+    width: 95px;
+    height: 25px;
+    padding-top: 16px;
+    text-align: center;
+    transition-timing-function: ease;
+}
+
+.btn-body1:hover {
+    width: 118px;
+}
+
+.btn-body2 {
+    background: linear-gradient(to right, #8E0E00, #1F1C18);
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 50px;
+    background-size: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.43);
+    transition: .5s;
+    width: 95px;
+    height: 25px;
+    padding-top: 16px;
+    text-align: center;
+    transition-timing-function: ease-out;
+}
+
+.btn-body2:hover {
+    background-position: left;
+    width: 118px;
+}
+
+.btn-body3 {
+    background: linear-gradient(to right, #8E0E00, #1F1C18);
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 50px;
+    background-size: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.43);
+    transition: .5s;
+    width: 200px;
+    height: 25px;
+    padding-top: 16px;
+    text-align: center;
+    transition-timing-function: ease-out;
+}
+
+.btn-body3:hover {
+    background-position: left;
+    width: 215px;
+}
+
+
+.btn1 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.btn2 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.btn3 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: #fff;
+    text-decoration: none;;
+   
+}
+
+.btn4 {
+   font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.btn-register {
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color:white;
+}
+
+.btn-register a {
+    color:white;
+    margin-right: 5px;
+    text-decoration: none;
+    
+}
+
+.btn-register ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.logo-holder {
+    display: flex;
+    float: left;
+    text-align: left;
+    padding-top: 13px;
+    padding-left: px;
+}
+
+.logo-img {
+    width: 210px;
+    height: 80px;
+    border-radius: 70px;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+}
+
+.logo-img:hover {
+    width: 265px;
+}
+
+
+
+
+
+
+/*news_home.html method get all news style */
+
+.all_news {
+    border: none;
+    background-color: rgba(121, 121, 121, 0.19);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.all_news h1 {
+    color: white;
+    overflow-wrap: break-word;
+    font-family: serif;
+}
+
+.all_news h3 {
+    color: white;
+    overflow-wrap: break-word;
+    font-family: serif;
+}
+
+.all_news p {
+    color: white;
+    overflow-wrap: break-word;
+    font-family: serif;
+}
+
+
+
+
+
+
+/*home.html method get news title style*/
+
+.all_title {
+    border: 2px 10px solid;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: rgba(87, 85, 85, 0.49);
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 25px;
+    width: 40%;
+    
+}
+
+.all_title:hover {
+    background-color: rgba(39, 39, 39, 0.57);
+}
+
+.title {
+    color: white;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: serif;
+    
+}
+
+.img-control {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 230px;
+    height: 150px;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+
+/*create_news.html methods post input text create new*/
+
+.block-form {
+    margin-top: 100px;
+    margin-left: 23%;
+    width: 700px;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+}
+
+::placeholder {
+    color:white;
+}
+
+.inp1 {
+    background-color: rgba(128, 128, 128, 0.66);
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 650px;
+    height: 30px;
+}
+
+
+.inp2 {
+    background-color: rgba(128, 128, 128, 0.66);
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 650px;
+    height: 30px;
+}
+
+.area {
+    background-color: rgba(128, 128, 128, 0.66);
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 650px;
+    height: 100px;
+}
+
+
+
+.inp3 {
+    background-color: rgba(128, 128, 128, 0.66);
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 650px;
+    height: 30px;
+}
+
+.inp4 {
+    background-color: rgba(128, 128, 128, 0.66);
+    display: block;
+    border: 2px solid;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 650px;
+    height: 30px;
+}
+
+.btn-create {
+    border-radius: 5px;
+    color: rgba(209, 208, 208, 0.85);
+    background-color: rgba(128, 128, 128, 0.66);
+    height: 36px;
+    width: 85px; 
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.btn-create:hover {
+    background-color: rgba(93, 93, 93, 0.63);
+}
+
+.btn-create-reg {
+    border-radius: 5px;
+    color: rgba(209, 208, 208, 0.85);
+    background-color: rgba(128, 128, 128, 0.66);
+    height: 36px;
+    width: 134px; 
+    margin-left: 20px;
+    margin-top: 11px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.btn-create-reg:hover {
+    background-color: rgba(93, 93, 93, 0.63);
+}
+
+
+
+/*one_news.html looking one all new (styles)*/
+
+
+
+svg g g path {
+    display: block;
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+    fill:rgba(255, 0, 0, 0.57);
+}
+
+
+.cls_comment {
+    background-color: rgba(128, 128, 128, 0.68);
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 550px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+    
+}
+
+.cls_comment ::placeholder {
+    
+}
+
+
+p.cls_p {
+    background-color: rgba(255, 255, 255, 0.85);
+    overflow-wrap: break-word;
+    border: 2px solid;
+    margin-left: 10px;
+    width: 370px;
+    margin-right: 55%;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: serif;
+    border-radius: 5px;
+    
+}
+
+
+.comment-div {
+    background-color: rgba(105, 105, 105, 0.52);
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 550px;
+    border-radius: 5px;
+    
+}
+
+
+.btn-update {
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: black;
+    text-decoration: none;
+    color: rgba(209, 208, 208, 0.85);
+    background-color: rgba(128, 128, 128, 0.66);
+    height: 30px;
+    width: 70px; 
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.btn-update a {
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    margin-top: 5px;
+    align-content: center;
+}
+
+.btn-update:hover {
+    background-color: rgba(93, 93, 93, 0.63);
+}
+
+
+.btn-delete {
+    display: inline-flex;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: black;
+    text-decoration: none;
+    color: rgba(209, 208, 208, 0.85);
+    background-color: rgba(128, 128, 128, 0.66);
+    height: 30px;
+    width: 70px; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.btn-delete a {
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    margin-top: 5px;
+    align-content: center;
+}
+
+.btn-delete:hover {
+    background-color: rgba(93, 93, 93, 0.63);
+}
+
+.h1 {
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: rgba(93, 93, 93, 0.41);
+
+}
+
+.h1 h1 {
+    color:white;
+    font-family: 'sans-serif';
+}
+
+.h h3{
+    color: white;  
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/main/css/home.css">
+    <link>
+</head>
+<body>
+      <header class="block">
+          <div class="logo-holder">
+              <img src="/static/main/img/news-logo.png" alt="NEWS" class="logo-img">
+          </div>
+          <div class="btn-body1">
+              <a class="btn1" href="{% url 'home' %}">
+                   Головна
+              </a>
+          </div>
+          <div class="btn-body2">
+              <a class="btn2" href="{% url 'news' %}">
+                  Усі Новини
+              </a>
+          </div>
+          {% if request.user.is_authenticated %}
+          <div class="btn-body3">
+              <a class="btn4" href="{% url 'create' %}">
+                  Створити Новину
+              </a>
+          </div>
+          {% endif %}
+          {% if request.user.is_authenticated %}
+          <div class="btn-register">
+              <ul>
+                  <li>{{ user.username }} | <a href="{% url 'logout' %}">Вийти</a></li>
+                  {% if request.user.is_authenticated %}
+                  <li><a href="{% url 'yours_news' %}">Ваші Новини</a></li>
+                  {% endif %}
+
+              </ul>
+          </div>
+          {% else %}
+          <div class="btn-register">
+              <a href="{% url 'register' %}">
+                  Реєстрація
+              </a>|
+              <a href="{% url 'login' %}">
+                  Увійти
+              </a>
+          </div>
+          {% endif %}
+      </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

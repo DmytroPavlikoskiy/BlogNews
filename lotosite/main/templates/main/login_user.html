@@ -1,0 +1,15 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}login{% endblock %}
+
+{% block content %}
+<h3 style="color: white">LOGIN</h3>
+<div class="block-form">
+    <form method="post">
+        {% csrf_token %}
+        <input class="inp1" type="text" name="username" placeholder="Ваше ім'я">
+        <input class="inp2" type="password" name="password" placeholder="Пароль">
+        <button class="btn-create">Увійти</button>
+    </form>
+</div>
+{% endblock %}
